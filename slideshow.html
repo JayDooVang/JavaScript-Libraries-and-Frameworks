@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Website</title>
+<!--splide link start-->
+    <link rel="stylesheet" href="../JavaScript-Libraries-and-Frameworks-1/css/splide.min.css">
+<!--splide link end-->
+    <link rel="stylesheet" href="../JavaScript-Libraries-and-Frameworks-1/css/style.css">
+</head>
+  <body>
+    <main>
+        <h1>Slideshow using Splide.js</h1>  
+
+        <section id="image-carousel" class="splide" aria-label="Animal Images">
+            
+            <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="../JavaScript-Libraries-and-Frameworks-1/img/dog.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../JavaScript-Libraries-and-Frameworks-1/img/duck.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../JavaScript-Libraries-and-Frameworks-1/img/whale.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../JavaScript-Libraries-and-Frameworks-1/img/fuji.jpg" alt="">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../JavaScript-Libraries-and-Frameworks-1/img/lion.jpg" alt="">
+                        </li>
+                    </ul>
+            </div>
+        </section>
+
+
+
+
+    </main>
+
+    
+
+    <script src="../JavaScript-Libraries-and-Frameworks-1/js/splide.min.js"></script>
+
+    <script>
+        new Splide( '#image-carousel', {
+            heightRatio: 0.5,
+        }).mount();
+
+    </script>
+
+  </body>
+</html>
